@@ -55,6 +55,15 @@ img.adminconsole-icon {
   transform: rotate(720deg);
 }
 
+
+
+
+
+
+
+
+/* ------------------- Scroll Bar ------------------- */
+
 /* width */
 ::-webkit-scrollbar {
   width: 1.5vh;
@@ -77,6 +86,7 @@ img.adminconsole-icon {
 ::-webkit-scrollbar-thumb:hover {
   background: crimson; 
 }
+
 
 
 
