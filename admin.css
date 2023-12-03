@@ -3,65 +3,6 @@
     background: transparent;
 }
 
-img {
-  transition: transform 0.9s ease-in-out;
-}
-
-.adminconsole-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #18191A;
-    color: white;
-}
-
-div.adminconsole-logobar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100vw;
-    display: block;
-    background: white;
-    overflow: hidden;
-}
-
-img.adminconsole-logo {
-    max-width: 22vw;
-    min-width: 30vh;
-    padding: 0.6vw 1vw;
-    float: left;
-}
-
-p.adminconsole-para1{
-    color: white;
-    font-size: 2.8vw;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 18.5vw 5vw;
-    margin-top: 3.5vw;
-    background-image: url("kyleadminwallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-img.adminconsole-icon {
-    width: 7vw;
-    padding: 0.3vw 3vw;
-    float: left;
-}
-
-.adminconsole-icon:hover {
-  transform: rotate(720deg);
-}
-
-
-
-
-
-
-
-
 /* ------------------- Scroll Bar ------------------- */
 
 /* width */
@@ -88,7 +29,57 @@ img.adminconsole-icon {
 }
 
 
+img {
+  transition: transform 0.9s ease-in-out;
+}
 
+.adminconsole-body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #18191A;
+    color: white;
+}
+
+div.adminconsole-logobar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    display: block;
+    background: white;
+    overflow: hidden;
+}
+
+img.adminconsole-logo {
+    max-width: 22vw;
+    min-width: 260px;
+    padding: 0.6vw 1vw;
+    float: left;
+}
+
+p.adminconsole-para1{
+    color: white;
+    font-size: 2.8vw;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 39.5vh 3vw;
+    margin-top: 3.5vw;
+    background-image: url("kyleadminwallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img.adminconsole-icon {
+    width: 7vw;
+    padding: 0.3vw 3vw;
+    float: left;
+}
+
+.adminconsole-icon:hover {
+  transform: rotate(720deg);
+}
 
 
 
@@ -114,11 +105,11 @@ form * {
 }
 
 form h3 {
-    font-size: 4.5vh;
+    font-size: 4vh;
     font-weight: 500;
     text-align: center;
     padding: 5vw 0vw;
-    color: crimson;
+    color: #A0A1B2;
 }
 
 label {
@@ -128,7 +119,7 @@ label {
     padding: 1vw 0vw;
     font-weight: 500;
     float: left;
-    color: orange;
+    color: #f0f0f0;
 }
 
 input {
@@ -144,34 +135,36 @@ input {
     box-sizing: border-box;
     color: white;
     border-radius: 5px;
-    border: 2px solid white;
+    border: 2px solid #4f30ab;
+}
+
+::placeholder {
+  color: silver;
 }
 
 .loginbutton {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #FB542B;
     margin-top: 8px;
     font-size: 2.5vh;
-    color: black;
-    margin-top: 10vh;
-}
-
- ::placeholder {
     color: white;
+    margin-top: 10vh;
+    border: 2px solid transparent;
 }
 
 button {
     margin-top: 50px;
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
+    background-color: #FB542B;
+    color: white;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    border: 2px solid transparent;
 }
 
 
