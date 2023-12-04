@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/index.html</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/kyledevops.html</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/profile.html</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/signin.html</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/kyle.com/responseweb.html</loc>
+  <lastmod>2023-12-04T06:28:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/kylesearch.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/api.search.google.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/todo.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/notes.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/api.search.bing.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://kyle-inc.github.io/apps.com/api.search.brave.html</loc>
+  <lastmod>2023-12-04T06:46:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
