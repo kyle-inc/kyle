@@ -67,13 +67,14 @@ div.logobar {
   right: 0px;
   width: 100vw;
   display: block;
+  z-index: 1;
   background: var(--logobar-background);
   overflow: hidden;
 }
 
 img.kyledevopslogo {
-  width: 15vw;
-  padding: 0.6vw 1vw;
+  width: 14vw;
+  padding: 0.5vw 1vw;
 }
 
 div.navbar {
@@ -84,6 +85,7 @@ div.navbar {
   width: 100vw;
   display: block;
   background-color: var(--navbar-background);
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar a {

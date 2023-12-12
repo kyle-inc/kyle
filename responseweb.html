@@ -59,7 +59,7 @@
         </a>
     </div>
 
-    <div class="navbar">
+    <div class="navbar" id="navbar">
 
         <!-- dark mode icon -->
         <img src="darkmodeicon.png" alt="darkmode" id="modeicon">
@@ -77,6 +77,31 @@
         <a class="signinbtn" href="https://kyle-web.000webhostapp.com/chat.php?user_id=123456789">Contact Us</a>
 
     </div>
+
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        // var prevScrollpos = window.pageYOffset;
+        // window.onscroll = function () {
+        //     var currentScrollPos = window.pageYOffset;
+        //     if (prevScrollpos > currentScrollPos) {
+        //         document.getElementById("navbar").style.top = "0";
+        //     } else {
+        //         document.getElementById("navbar").style.top = "-50px";
+        //     }
+        //     prevScrollpos = currentScrollPos;
+        // }
+    </script>
 
     <!-- this is the blank bar so that content dont get covered under nav -->
     <div class="blankbar"></div>
