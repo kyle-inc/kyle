@@ -62,7 +62,7 @@
     <div class="navbar">
 
         <!-- dark mode icon -->
-        <img src="darkmodeicon.png" alt="darkmode" id="modeicon">
+        <img src="https://kyle-inc.github.io/resources/darkmodeicon.png" alt="darkmode" id="modeicon">
 
         <a class="active" href="index.html">Home</a>
 
@@ -97,12 +97,12 @@
         let localData = localStorage.getItem("theme");
 
         if (localData == "light") {
-            modeicon.src = "darkmodeicon.png";
+            modeicon.src = "https://kyle-inc.github.io/resources/darkmodeicon.png";
             kylelogoid.src = "kylelogoblack.png"
             document.body.classList.remove("dark-theme");
         }
         else if (localData == "dark") {
-            modeicon.src = "lightmodeicon.png";
+            modeicon.src = "https://kyle-inc.github.io/resources/lightmodeicon.png";
             kylelogoid.src = "kylelogowhite.png";
             document.body.classList.add("dark-theme");
         }
@@ -112,12 +112,12 @@
         icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
             if (document.body.classList.contains("dark-theme")) {
-                modeicon.src = "lightmodeicon.png";
+                modeicon.src = "https://kyle-inc.github.io/resources/lightmodeicon.png";
                 kylelogoid.src = "kylelogowhite.png";
 
                 localStorage.setItem("theme", "dark");
             } else {
-                modeicon.src = "darkmodeicon.png";
+                modeicon.src = "https://kyle-inc.github.io/resources/darkmodeicon.png";
                 kylelogoid.src = "kylelogoblack.png"
 
                 localStorage.setItem("theme", "light");
