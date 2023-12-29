@@ -62,7 +62,7 @@
     <div class="navbar" id="navbar">
 
         <!-- dark mode icon -->
-        <img src="https://kyle-inc.github.io/resources/modeswitchbutton/darkmodeicon.png" alt="darkmode" id="modeicon">
+        <img src="https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png" alt="darkmode" id="modeicon">
 
         <a class="active" href="kyledevops.html">Home</a>
 
@@ -106,7 +106,7 @@
     <!-- this is the blank bar so that content dont get covered under nav -->
     <div class="blankbar"></div>
 
-    <img style="width: 100%;" src="https://kyle-inc.github.io/resources/kyledevops/devopsloop.jpg" alt="">
+    <img style="width: 100%;" src="https://kyle-inc.github.io/resource/kyledevops/devopsloop.jpg" alt="">
 
     <footer>
         <div class="content">
@@ -182,12 +182,12 @@
         let localData = localStorage.getItem("theme");
 
         if (localData == "light") {
-            modeicon.src = "https://kyle-inc.github.io/resources/modeswitchbutton/darkmodeicon.png";
+            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
             kylelogoid.src = "kyledevopslogoblack.png"
             document.body.classList.remove("dark-theme");
         }
         else if (localData == "dark") {
-            modeicon.src = "https://kyle-inc.github.io/resources/modeswitchbutton/lightmodeicon.png";
+            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
             kylelogoid.src = "kyledevopslogowhite.png";
             document.body.classList.add("dark-theme");
         }
@@ -197,12 +197,12 @@
         icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
             if (document.body.classList.contains("dark-theme")) {
-                modeicon.src = "https://kyle-inc.github.io/resources/modeswitchbutton/lightmodeicon.png";
+                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
                 kylelogoid.src = "kyledevopslogowhite.png";
 
                 localStorage.setItem("theme", "dark");
             } else {
-                modeicon.src = "https://kyle-inc.github.io/resources/modeswitchbutton/darkmodeicon.png";
+                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
                 kylelogoid.src = "kyledevopslogoblack.png"
 
                 localStorage.setItem("theme", "light");
