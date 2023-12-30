@@ -49,124 +49,32 @@
 
 <body>
 
-    <div class="logobar">
+    <div class="navbar" id="navbar">
+
         <a href="index.html">
-            <!-- <center> -->
-                <img class="kylelogo" id="kylelogoid" src="kylelogoblack.png" alt="kylelogo">
-            <!-- </center> -->
+            <img class="kylelogo" id="kylelogoid" src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png" alt="kylelogo">
         </a>
-    </div>
 
-    <div class="navbar">
+        <div class="navbarcontent">
 
-        <!-- dark mode icon -->
-        <img src="https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png" alt="darkmode" id="modeicon">
+            <a class="links" href="index.html">Home</a>
 
-        <a href="index.html">Home</a>
+            <a class="links" href="kyledevops.html">KYLE Devops</a>
 
-        <a href="kyledevops.html">KYLE Devops</a>
+            <a class="links active" href="profile.html">Profile</a>
 
-        <a class="active" href="profile.html">Profile</a>
+            <a class="links" href="https://kyle-inc.github.io/apps.com">Apps</a>
 
-        <a href="https://kyle-inc.github.io/apps.com">Apps</a>
+            <a class="links" href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
 
-        <a href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
+            <a class="signinbtn links" href="signin.html">Sign In</a>
 
-        <a class="signinbtn" href="signin.html">Sign In</a>
-
-    </div>
-
-
-    <!-- dark mode java script -->
-    <script>
-        var icon = document.getElementById("modeicon");
-
-
-
-        if (localStorage.getItem("theme") == "null") {
-            localStorage.setItem("theme", "light");
-        }
-
-        let localData = localStorage.getItem("theme");
-
-        if (localData == "light") {
-            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
-            kylelogoid.src = "kylelogoblack.png"
-            document.body.classList.remove("dark-theme");
-        }
-        else if (localData == "dark") {
-            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
-            kylelogoid.src = "kylelogowhite.png";
-            document.body.classList.add("dark-theme");
-        }
-
-
-
-        icon.onclick = function () {
-            document.body.classList.toggle("dark-theme");
-            if (document.body.classList.contains("dark-theme")) {
-                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
-                kylelogoid.src = "kylelogowhite.png";
-
-                localStorage.setItem("theme", "dark");
-            } else {
-                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
-                kylelogoid.src = "kylelogoblack.png"
-
-                localStorage.setItem("theme", "light");
-            }
-        }
-    </script>
+        </div>
 
 
 
     <!-- this is the blank bar so that content dont get covered under nav -->
     <div class="blankbar"></div>
-
-
-    <p>
-
-    <div align="center" class="cardtwo" style="width:25%">
-
-        <img id="myImg" src="anuragprofile.jpg" alt=" Anurag Gautam " style="width:100%">
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function () {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            }
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-        </script>
-        <!-- Modal end -->
-        <h4 class="anuragname"><strong>Anurag Gautam</strong></h4>
-
-        <br>
-
-    </div>
-
-    </p>
-
 
 </body>
 

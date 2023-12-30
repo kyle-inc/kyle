@@ -15,7 +15,7 @@
     <!-- Here I can add index/noindex and follow/nofollow for my website -->
 
     <!-- Here is Icon of title -->
-    <link rel="icon" href="KYLEicon.png" type="image/x-icon">
+    <link rel="icon" href="https://kyle-inc.github.io/resource/kyle/KYLEIcon.png" type="image/x-icon">
 
     <!-- Here I have to include my CSS file -->
     <link rel="stylesheet" href="kyleuniversal.css">
@@ -51,30 +51,27 @@
 
 <body>
 
-    <div class="logobar">
+    <div class="navbar" id="navbar">
+
         <a href="index.html">
-            <!-- <center> -->
-            <img class="kylelogo" id="kylelogoid" src="kylelogoblack.png" alt="kylelogo">
-            <!-- </center> -->
+            <img class="kylelogo" id="kylelogoid" src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png" alt="kylelogo">
         </a>
-    </div>
 
-    <div class="navbar">
+        <div class="navbarcontent">
 
-        <!-- dark mode icon -->
-        <img src="https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png" alt="darkmode" id="modeicon">
+            <a class="links active" href="index.html">Home</a>
 
-        <a class="active" href="index.html">Home</a>
+            <a class="links" href="kyledevops.html">KYLE Devops</a>
 
-        <a href="kyledevops.html">KYLE Devops</a>
+            <a class="links" href="profile.html">Profile</a>
 
-        <a href="profile.html">Profile</a>
+            <a class="links" href="https://kyle-inc.github.io/apps.com">Apps</a>
 
-        <a href="https://kyle-inc.github.io/apps.com">Apps</a>
+            <a class="links" href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
 
-        <a href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
+            <a class="signinbtn links" href="signin.html">Sign In</a>
 
-        <a class="signinbtn" href="signin.html">Sign In</a>
+        </div>
 
     </div>
 
@@ -83,56 +80,16 @@
 
     <img style="width: 100%;" src="https://kyle-inc.github.io/resource/kyle/kyleindia.jpg" alt="">
 
-
-    <!-- dark mode java script -->
-    <script>
-        var icon = document.getElementById("modeicon");
-
-
-
-        if (localStorage.getItem("theme") == "null") {
-            localStorage.setItem("theme", "light");
-        }
-
-        let localData = localStorage.getItem("theme");
-
-        if (localData == "light") {
-            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
-            kylelogoid.src = "kylelogoblack.png"
-            document.body.classList.remove("dark-theme");
-        }
-        else if (localData == "dark") {
-            modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
-            kylelogoid.src = "kylelogowhite.png";
-            document.body.classList.add("dark-theme");
-        }
-
-
-
-        icon.onclick = function () {
-            document.body.classList.toggle("dark-theme");
-            if (document.body.classList.contains("dark-theme")) {
-                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/lightmodeicon.png";
-                kylelogoid.src = "kylelogowhite.png";
-
-                localStorage.setItem("theme", "dark");
-            } else {
-                modeicon.src = "https://kyle-inc.github.io/resource/modeswitchbutton/darkmodeicon.png";
-                kylelogoid.src = "kylelogoblack.png"
-
-                localStorage.setItem("theme", "light");
-            }
-        }
-    </script>
-
-
-
     <footer>
+
         <div class="content">
+
             <div class="top">
+
                 <div class="logo-details">
-                    <img src="kylelogowhite.png" style="width: 14vh; padding: 5px 5px;" alt="">
+                    <img src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png" style="width: 20vh; padding: 5px 5px;" alt="">
                 </div>
+
                 <div class="media-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -140,8 +97,11 @@
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
+
             </div>
+
             <div class="link-boxes">
+
                 <ul class="box">
                     <li class="link_name">API</li>
                     <li><a href="#">KYLE Search</a></li>
@@ -149,6 +109,7 @@
                     <li><a href="#">Response</a></li>
                     <li><a href="#">Notes</a></li>
                 </ul>
+
                 <ul class="box">
                     <li class="link_name">Services</li>
                     <li><a href="#">KYLE Search</a></li>
@@ -156,6 +117,7 @@
                     <li><a href="#">Response</a></li>
                     <li><a href="#">Notes</a></li>
                 </ul>
+
                 <ul class="box">
                     <li class="link_name">Account</li>
                     <li><a href="#">Profile</a></li>
@@ -163,6 +125,7 @@
                     <li><a href="#">Prefrences</a></li>
                     <li><a href="#">Purchase</a></li>
                 </ul>
+
                 <ul class="box">
                     <li class="link_name">KYLE Devops</li>
                     <li><a href="#">HTML & CSS</a></li>
@@ -170,22 +133,32 @@
                     <li><a href="#">Photography</a></li>
                     <li><a href="#">Photoshop</a></li>
                 </ul>
+
                 <ul class="box input-box">
                     <li class="link_name">Subscribe</li>
                     <li><input type="text" placeholder="Enter your email"></li>
                     <li><input type="button" value="Subscribe"></li>
                 </ul>
+
             </div>
+
         </div>
+
         <div class="bottom-details">
+
             <div class="bottom_text">
+
                 <span class="copyright_text">Copyright © 2022 <a href="#">KYLE.inc.</a>All rights reserved</span>
+
                 <span class="policy_terms">
                     <a href="#">Privacy policy</a>
                     <a href="#">Terms & condition</a>
                 </span>
+
             </div>
+
         </div>
+
     </footer>
 
 </body>
