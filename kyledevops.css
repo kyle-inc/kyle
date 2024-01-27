@@ -155,6 +155,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 footer {
     background: #121212;
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 footer::before {
