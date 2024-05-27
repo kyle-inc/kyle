@@ -131,9 +131,14 @@ div.navbar {
 
 .div0 {
     width: 100%;
-    height: 9%;
+    height: 70px;
     background-color: #42378f;
     background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+}
+
+.textunderline {
+    text-decoration: underline;
+    text-decoration-color: crimson;
 }
 
 .div1 {
@@ -151,7 +156,7 @@ div.navbar {
     color: black;
     font-size: 7.8vh;
     font-family: 'Ubuntu', sans-serif;
-    padding: 38vh 2vw;
+    padding: 39vh 2vw;
     background-color: #42378f;
     background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
 }
