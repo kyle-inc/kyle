@@ -131,7 +131,9 @@ div.navbar {
 
 .div0 {
     width: 100%;
-    height: 70px;
+    height: 4.2vw;
+    max-height: 77px;
+    min-height: 20px;
     background-color: #42378f;
     background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
 }
@@ -143,70 +145,67 @@ div.navbar {
 
 .div1 {
     color: white;
-    font-size: 7.8vh;
+    /* font-size: 7vh; */
+    font-size: 55px;
     font-family: 'Ubuntu', sans-serif;
     padding: 42vh 2vw;
-    background-color: #000000;
-    /* background-image: url("https://kyle-inc.github.io/resource/kyledevops/devopsloop.jpg");
-    background-repeat: no-repeat;
-    height: 850px; */
+    /* padding: 350px 2vw; */
+    background-color: black;
 }
 
 .div2 {
     color: black;
-    font-size: 7.8vh;
+    /* font-size: 7vh; */
+    font-size: 55px;
     font-family: 'Ubuntu', sans-serif;
-    padding: 39vh 2vw;
+    padding: 40vh 2vw;
+    /* padding: 330px 2vw; */
     background-color: #42378f;
     background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
 }
 
-.div6 {
-    color: silver;
-    font-size: 7.8vh;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 30vh 2vw;
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+.div3container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
 }
 
 .div3 {
     width: 46%;
+    min-width: 43vh;
     color: silver;
-    font-size: 7.8vh;
+    font-size: 45px;
     font-family: 'Ubuntu', sans-serif;
     padding: 40vh 2%;
-    background-color: #000000;
+    background-color: black;
     float: left;
 }
 
-.divhalf1 {
+.divhalf3 {
     width: 46%;
+    min-width: 43.5vh;
     color: silver;
-    font-size: 7.8vh;
-    font-family: 'Ubuntu', sans-serif;
-    /* padding: 30vh 2%; */
-    padding: 5vh 2%;
-    margin-top: 10vh;
+    padding: 10vh 2%;
+    margin-top: 6vh;
     background-color: #f53844;
     float: right;
 }
 
-.div4 {
-    color: silver;
-    font-size: 7.8vh;
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 100vh;
-    padding: 30vh 2vw;
-    background-color: #000000;
-}
-
 .div5 {
     color: silver;
-    font-size: 7.8vh;
+    font-size: 7vh;
     font-family: 'Ubuntu', sans-serif;
     padding: 50vh 2vw;
+    background-color: white;
+}
+
+.div6 {
+    color: silver;
+    font-size: 8vh;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 32vh 2vw;
     background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
 }
 
 img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
