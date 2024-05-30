@@ -9,67 +9,36 @@
 
 <url>
   <loc>https://kyle-inc.github.io/kyle.com/</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kyle-inc.github.io/kyle.com/index.html</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
+  <loc>https://kyle-inc.github.io/kyle.com/kyledevops</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kyle-inc.github.io/kyle.com/kyledevops.html</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
+  <loc>https://kyle-inc.github.io/kyle.com/signin</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kyle-inc.github.io/kyle.com/profile.html</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/apps.com/</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/kyle.com/signin.html</loc>
-  <lastmod>2024-01-02T04:40:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/kyle.com/kylesearch.html</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
+  <loc>https://kyle-inc.github.io/kyle.com/response</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://kyle-inc.github.io/kyle.com/response.html</loc>
-  <lastmod>2024-01-02T04:40:17+00:00</lastmod>
+  <loc>https://kyle-inc.github.io/kyle.com/kylesearch</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+  <loc>https://kyle-inc.github.io/kyle.com/kylesearchlight</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://kyle-inc.github.io/apps.com/api.search.google.html</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/apps.com/todo.html</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/apps.com/notes.html</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/apps.com/api.search.bing.html</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://kyle-inc.github.io/apps.com/api.search.brave.html</loc>
-  <lastmod>2024-01-02T04:44:17+00:00</lastmod>
+  <loc>https://kyle-inc.github.io/kyle.com/signin</loc>
+  <lastmod>2024-05-28T06:04:35+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
