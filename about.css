@@ -59,7 +59,7 @@ div.name {
     width: 300px;
     position: fixed;
     left: 0;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
     padding: 10px 20px;
@@ -75,7 +75,7 @@ div.pills {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
-    padding: 15px 1vw;
+    padding: 15px 10px;
     color: black;
     background-color: #ee696b;
 }
