@@ -9,19 +9,19 @@
 /* width */
 ::-webkit-scrollbar {
     width: 0.75vw;
-    background-color: transparent;
+    background-color: white;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     /* border-radius: 10px; */
-    background-color: transparent;
+    background-color: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: grey;
-    border-radius: 35px;
+    /* border-radius: 35px; */
 }
 
 /* Handle on hover */
@@ -39,8 +39,9 @@ html {
     background-attachment: fixed;
     border: 0;
     top: 0;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #98d9e1;
+    background-image: linear-gradient(315deg, #98d9e1 0%, #d6aed6 74%);
 }
 
 .a {
@@ -80,23 +81,33 @@ div.pills {
     background-color: #ee696b;
 }
 
+h1 {
+    font-size: 4vh;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3{
+    font-size: 2.5vh;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
 .div-1 {
     font-size: 5vh;
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
-    /* padding: 47vh 10px; */
     padding: 25vh 10px;
     text-align: center;
-    color: cadetblue;
-    background-color: whitesmoke;
 }
 
-.div-fs {
-    font-size: 5vh;
-    font-weight: 900;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 45vh 20px;
+.container1 {
+    background-color: white;
     color: black;
-    background-color: #42378f;
-    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    width: 90%;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    padding: 2vh 20px;
+    border-radius: 50px;
 }
