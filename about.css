@@ -70,13 +70,12 @@ div.name {
 }
 
 div.pills {
-    width: 160px;
     position: fixed;
     right: 0;
     font-size: 30px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
-    padding: 16px 20px;
+    padding: 10px 15px;
     color: black;
     background-color: #ee696b;
 }
@@ -85,9 +84,10 @@ div.pills {
     font-size: 50px;
     font-weight: 900;
     font-family: 'Ubuntu', sans-serif;
-    padding: 47vh 10px;
+    /* padding: 47vh 10px; */
+    padding: 25vh 10px;
     text-align: center;
-    color: black;
+    color: cadetblue;
     background-color: whitesmoke;
 }
 
