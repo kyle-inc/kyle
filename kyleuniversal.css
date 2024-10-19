@@ -1,133 +1,123 @@
-::selection {
-    color: silver;
-    background: transparent;
-}
-
-
-
-/* ------------------- Scroll Bar ------------------- */
-
-/* width */
-::-webkit-scrollbar {
-    width: 0.75vw;
-    background-color: transparent;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    /* border-radius: 10px; */
-    background-color: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: grey;
-    border-radius: 35px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: silver;
-}
-
-
-
-
-body,
-html {
-    width: 100%;
-    height: 100%;
+*,
+body {
+    padding: 0;
     margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 0;
-    top: 0;
-    background-color: var(--body-background);
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-:root {
-    --body-background: black;
-    --logobar-background: black;
-    --navbar-background: #050100;
-    --textdefault-color: black;
-}
-
-.a {
+a {
     text-decoration: none;
-    cursor: pointer;
 }
 
-div.navbar {
+.navigation-header {
     position: fixed;
+    background-color: black;
+    padding: 0px 10px;
+    height: 60px;
+    width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    /* min-height: 40px; */
-    display: block;
-    background-color: var(--navbar-background);
-}
-
-img.kylelogo {
-    width: 8vw;
-    /* min-width: 110px; */
-    padding: 0.5vw 1vw;
-}
-
-.navbarcontent {
-    width: 70vw;
-    margin-top: 0;
-    margin-right: 1vw;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-content: center;
-    flex-wrap: wrap;
-    float: right;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-.links {
-    color: whitesmoke;
-    padding: 1.17vw 2.5vw;
-    /* font-size: 2.2vh; */
-    font-size: 1vw;
+nav {
+    width: 97%;
+    border-radius: 10px;
+    /* max-width: 1650px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+/* .logo-container>a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+} */
+
+.kyle-logo {
+    width: 120px;
+    /* padding: 10px 10px; */
+}
+
+.navigation-items {
+    display: flex;
+    gap: 70px;
+}
+
+.navigation-items>a {
+    display: flex;
+    color: ghostwhite;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    transition-duration: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .4s ease-in-out;
 }
 
-.links:hover {
-    background-color: transparent;
-    color: #C9D1D9;
-    padding: 1.175vw 3.5vw;
-    font-size: 1vw;
-    border-bottom: 0.3vw solid limegreen;
+.navigation-items>a:hover {
+    color: silver;
+    padding: 0px 20px;
 }
 
-.navbarcontent a.active {
-    /* background-color: #4CAF50; */
-    border-bottom: 0.3vw solid transparent;
-}
-
-.links.active:hover {
+.hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
     color: white;
 }
 
-div.welcometokyle {
-    color: white;
-    font-size: 7.8vh;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 42vh 3vw;
-    margin-top: 3.5vw;
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    .navigation-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: rgb(73, 51, 153);
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+    }
+}
+
+
+
+.colorbar {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    margin-top: 60px;
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+}
+
+.welcometokyle {
     background-image: url("https://kyle-inc.github.io/resource/kyle/backgroundindex.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 7.8vh;
+    padding: 46vh 3vw;
 }
 
 div.about {
-    color: black;
-    font-size: 7.8vh;
-    font-family: 'Ubuntu', sans-serif;
     padding: 45vh 3vw;
     background-color: #42378f;
     background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
@@ -135,46 +125,8 @@ div.about {
     background-size: cover;
 }
 
-.btn-yes {
-    background-color: cadetblue;
+.link-about {
     color: black;
-    font-size: 30px;
+    font-size: 7.8vh;
     font-family: 'Ubuntu', sans-serif;
-    padding: 15px 30px;
-    border-radius: 15px;
-    border: none;
-}
-
-img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
-    display: none;
-}
-
-.centre {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-.info {
-    background-color: white;
-    width: 100%;
-    height: 30%;
-}
-
-.kylelogoinfo {
-    width: 20vh;
-    padding: 9vh 10vh;
-}
-
-.supportinfo {
-    color: white;
-    margin-top: 1px;
-}
-
-.kyledevopslogoinfo {
-    width: 20vh;
-    padding: 9vh 10vh;
 }

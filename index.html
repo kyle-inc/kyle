@@ -45,47 +45,59 @@
     <title>KYLE</title>
 
     <style>
-
     </style>
 
 </head>
 
 <body>
 
-    <div class="navbar" id="navbar">
+    <header class="navigation-header">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="kyle-logo" id="kyle-logo-id"
+                        src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png">
+                </a>
+            </div>
+            <div class="navigation-items" id="navigation-items">
+                <a class="links" href="https://kyle-inc.github.io/devops">KYLE Devops</a>
+                <a class="links" href="https://gautam-anurag.github.io/profile">About</a>
+                <a class="links" href="https://kyle-inc.github.io/apps">Apps</a>
+                <a class="links" href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact
+                    Us</a>
+                <a class="links" href="https://kyle-inc.github.io/accounts">Sign In</a>
+            </div>
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+        </nav>
+    </header>
 
-        <a href="index.html">
-            <img class="kylelogo" id="kylelogoid" src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png"
-                alt="kylelogo">
-        </a>
-
-        <div class="navbarcontent">
-
-            <!-- <a class="links active" href="index.html">Home</a> -->
-
-            <a class="links" href="https://kyle-inc.github.io/devops">KYLE Devops</a>
-
-            <a class="links" href="https://gautam-anurag.github.io/profile">About</a>
-
-            <a class="links" href="https://kyle-inc.github.io/apps">Apps</a>
-
-            <a class="links" href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
-
-            <a class="links" href="https://kyle-inc.github.io/accounts">Sign In</a>
-
-        </div>
-
-    </div>
-
-    <div class="blankbar"></div>
+    <div class="colorbar"></div>
 
     <div class="welcometokyle">
         Welcome to KYLE
     </div>
 
     <div class="about">
-        Wanna know how it was all started? <a href="about"><button class="btn-yes">Yes, I am interested</button></a>
+        <a class="link-about" href="https://gautam-anurag.github.io/profile">Wanna know how it was all started?</a>
     </div>
+
+    <script>
+        let openHam = document.querySelector('#openHam');
+        let closeHam = document.querySelector('#closeHam');
+        let navigationItems = document.querySelector('#navigation-items');
+
+        const hamburgerEvent = (navigation, close, open) => {
+            navigationItems.style.display = navigation;
+            closeHam.style.display = close;
+            openHam.style.display = open;
+        };
+
+        openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+        closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+    </script>
 
     <footer>
 
