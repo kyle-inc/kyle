@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+</head>
+
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .navigation-header {
+        position: fixed;
+        background-color: black;
+        padding: 0px 10px;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    nav {
+        width: 97%;
+        border-radius: 10px;
+        /* max-width: 1650px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+    }
+
+    /* .logo-container>a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+} */
+
+    .kyle-logo {
+        width: 120px;
+        /* padding: 10px 10px; */
+    }
+
+    .navigation-items {
+        display: flex;
+        gap: 70px;
+    }
+
+    .navigation-items>a {
+        display: flex;
+        color: ghostwhite;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        transition: .15s ease-in-out;
+    }
+
+    .navigation-items>a:hover {
+        color: silver;
+        font-weight: 600;
+        padding: 0px 20px;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+    }
+
+    @media screen and (max-width:768px) {
+        .hamburger {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .hamburger #closeHam {
+            display: none;
+        }
+
+        .navigation-items {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            top: 58px;
+            background-color: rgb(73, 51, 153);
+            width: 100%;
+            height: calc(100vh - 58px);
+            padding-top: 60px;
+            gap: 10vh;
+        }
+    }
+
+
+
+    .colorbar {
+        position: fixed;
+        width: 100%;
+        height: 5px;
+        margin-top: 60px;
+        background-color: #42378f;
+        background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    }
+</style>
+
+<body>
+
+    <header class="navigation-header">
+
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="kyle-logo" id="kyle-logo-id" src="https://kyle-inc.github.io/resource/kyle/kylelogowhite.png">
+                </a>
+            </div>
+
+            <div class="navigation-items" id="navigation-items">
+                <a class="links" href="https://kyle-inc.github.io/devops">KYLE Devops</a>
+                <a class="links" href="https://gautam-anurag.github.io/profile">About</a>
+                <a class="links" href="https://kyle-inc.github.io/apps">Apps</a>
+                <a class="links" href="https://response-web.000webhostapp.com/chat.php?user_id=1586562190">Contact Us</a>
+                <a class="links" href="https://kyle-inc.github.io/accounts">Sign In</a>
+            </div>
+
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="colorbar"></div>
+
+    <script>
+        let openHam = document.querySelector('#openHam');
+        let closeHam = document.querySelector('#closeHam');
+        let navigationItems = document.querySelector('#navigation-items');
+
+        const hamburgerEvent = (navigation, close, open) => {
+            navigationItems.style.display = navigation;
+            closeHam.style.display = close;
+            openHam.style.display = open;
+        };
+
+        openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+        closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+    </script>
+
+</body>
+
+</html>

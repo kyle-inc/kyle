@@ -87,12 +87,13 @@ nav {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    font-size: 17px;
-    transition: .4s ease-in-out;
+    font-size: 18px;
+    transition: .15s ease-in-out;
 }
 
 .navigation-items>a:hover {
     color: silver;
+    font-weight: 600;
     padding: 0px 20px;
 }
 
