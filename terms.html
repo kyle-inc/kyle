@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Poppins @ Google Fonts -->
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Fredoka @ Google Fonts -->
+    <!-- font-family: 'Fredoka', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+    <!-- Ununtu @ Google Fonts -->
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://kyle-inc.github.io/framework/footer-1-light/footer.css">
+
+    <title>KYLE t&c</title>
+    <link rel="icon" href="https://kyle-inc.github.io/resource/kyle/KYLEIcon.png" type="image/x-icon">
+
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border: 0;
+            top: 0;
+            background-color: var(--body-background);
+        }
+
+        :root {
+            --body-background: white;
+            --navbar-background: white;
+            --text-color-primary: black;
+            --text-color-secondary: grey;
+        }
+
+        .a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .navigation-header {
+            position: fixed;
+            background-color: var(--navbar-background);
+            padding: 0px 10px;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        nav {
+            width: 97%;
+            border-radius: 10px;
+            /* max-width: 1650px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--navbar-background);
+        }
+
+        .kyle-logo {
+            width: 140px;
+            /* padding: 10px 10px; */
+        }
+
+        .navigation-items {
+            display: flex;
+            gap: 70px;
+        }
+
+        .navigation-items>a {
+            display: flex;
+            color: var(--text-color-primary);
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            transition: .15s ease-in-out;
+        }
+
+        .navigation-items>a:hover {
+            color: var(--text-color-secondary);
+            font-weight: 600;
+            padding: 0px 20px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-color-primary);
+        }
+
+        @media screen and (max-width:768px) {
+            .hamburger {
+                display: flex;
+                cursor: pointer;
+            }
+
+            .hamburger #closeHam {
+                display: none;
+            }
+
+            .navigation-items {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 58px;
+                background-color: rgb(73, 51, 153);
+                width: 100%;
+                height: calc(100vh - 58px);
+                padding-top: 60px;
+                gap: 10vh;
+            }
+        }
+
+        .colorbar {
+            position: fixed;
+            width: 100%;
+            height: 5px;
+            margin-top: 60px;
+            background-color: lightsteelblue;
+        }
+
+        .textunderline {
+            text-decoration: underline;
+            text-decoration-color: crimson;
+        }
+
+        .div1 {
+            background-color: white;
+            color: black;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 25vh 2vw;
+        }
+
+        .div2 {
+            background-color: white;
+            color: slategray;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0vh 6vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="navigation-header">
+
+        <nav>
+
+            <div class="logo-container">
+
+                <a href="https://kyle-inc.github.io/kyle">
+                    <img class="kyle-logo" id="kyle-logo-id"
+                        src="https://kyle-inc.github.io/resource/kyle/kylelogoblack.png">
+                </a>
+
+            </div>
+
+            <div class="hamburger">
+                <span id="openHam">&#9776;</span>
+                <span id="closeHam">&#x2716;</span>
+            </div>
+
+            <script>
+                let openHam = document.querySelector('#openHam');
+                let closeHam = document.querySelector('#closeHam');
+                let navigationItems = document.querySelector('#navigation-items');
+
+                const hamburgerEvent = (navigation, close, open) => {
+                    navigationItems.style.display = navigation;
+                    closeHam.style.display = close;
+                    openHam.style.display = open;
+                };
+
+                openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+                closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+            </script>
+
+        </nav>
+
+    </header>
+
+    <div class="colorbar"></div>
+
+    <div style="width: 100%; height: 70px; background-color: red;"></div>
+
+    <div class="div1">
+        <font style="color: black;">Terms and Conditions with Apology</font>
+    </div>
+
+    <div class="div2">
+        <font style="color: red;">**Regarding Past Content:**</font>
+
+        This website was originally created during my childhood/adolescence. At that time, I incorporated certain logos,
+        trademarks, and content that may be protected by copyright or other intellectual property laws. I acknowledge
+        that this was done without proper authorization.
+
+        **Apology:**
+
+        I sincerely apologize for any infringement that may have occurred. My intentions were purely non-commercial and
+        recreational. I was a young enthusiast exploring web development, and I did not fully understand the legal
+        implications of using copyrighted and trademarked materials. I did not intend to cause harm or misrepresent any
+        brands or entities.
+
+        **Current Status:**
+
+        This website is now presented for archival purposes only. I have made efforts to remove or modify any
+        potentially infringing content. However, due to the nature of the original creation, some elements may remain.
+
+        **Disclaimer:**
+
+        * This website is not affiliated with, endorsed by, or sponsored by any of the companies or organizations whose
+        logos, trademarks, or content may have been used in the past.
+        * The content on this website is provided "as is," without any warranties, express or implied.
+        * I am not responsible for any consequences arising from the use of this website or its content.
+
+        **Future Conduct:**
+
+        I understand the importance of respecting intellectual property rights and will ensure that all future projects
+        comply with applicable laws and regulations.
+
+        **Contact:**
+
+        If you believe that any content on this website infringes your intellectual property, please contact me
+        immediately at [Your Email Address].
+
+        **By accessing and using this website, you agree to these terms and conditions.**
+    </div>
+
+
+    <footer>
+
+        <div class="content">
+
+            <div class="top">
+
+                <div class="logo-details">
+                    <a href="https://kyle-inc.github.io/kyle">
+                        <img src="https://kyle-inc.github.io/resource/kyle/kylelogoblack.png"
+                            style="width: 8vw; min-width: 100px; padding: 5px 5px;" alt="">
+                    </a>
+                </div>
+
+                <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <div class="link-boxes">
+
+                <ul class="box">
+                    <li class="link_name">API</li>
+                    <li><a href="#">KYLE Search</a></li>
+                    <li><a href="#">TODO</a></li>
+                    <li><a href="#">Response</a></li>
+                    <li><a href="#">Notes</a></li>
+                </ul>
+
+                <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">KYLE Search</a></li>
+                    <li><a href="#">TODO</a></li>
+                    <li><a href="#">Response</a></li>
+                    <li><a href="#">Notes</a></li>
+                </ul>
+
+                <ul class="box">
+                    <li class="link_name">Account</li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Prefrences</a></li>
+                    <li><a href="#">Purchase</a></li>
+                </ul>
+
+                <ul class="box">
+                    <li class="link_name">KYLE Devops</li>
+                    <li><a href="#">HTML & CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Photoshop</a></li>
+                </ul>
+
+                <ul class="box input-box">
+                    <li class="link_name">Subscribe</li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-details">
+
+            <div class="bottom_text">
+
+                <span class="copyright_text">Copyright © 2022 <a
+                        href="https://kyle-inc.github.io/kyle/terms">KYLE.inc.</a>All rights reserved</span>
+
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
