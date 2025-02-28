@@ -162,6 +162,10 @@
             font-style: normal;
         }
 
+        .inward {
+            padding: 0vh 3vw;
+        }
+
         .div1 {
             background-color: white;
             color: black;
@@ -181,6 +185,42 @@
             font-family: 'Ubuntu', sans-serif;
             line-height: 45px;
             padding: 0vh 8vw;
+        }
+
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
         }
     </style>
 
@@ -230,49 +270,118 @@
     <div style="width: 100%; height: 65px; background-color: white;"></div>
 
     <div class="div1">
+        <font style="color: black;">A Note from the Creator</font>
+    </div>
+
+    <div class="div2">
+
+        Hey everyone, <br><br>
+
+        <div class="inward">
+
+            If you're looking around this site, you might see some old logos, names, or content that belong to other
+            companies. <br><br>
+
+            I made this website when I was a kid, and I thought it would be fun to use those things. Looking back, I
+            realize
+            that wasn't the right thing to do. <br><br>
+
+            I want to sincerely apologize to anyone whose trademarks or copyrights I might have used without permission.
+            I
+            was young and didn't really understand how important it is to respect those rights. I didn't mean any harm,
+            and I
+            definitely wasn't trying to make money off of anyone else's work. It was just a hobby, and I was excited
+            about
+            learning how to build websites. <br><br>
+
+            This site is pretty much just an old project now. I've tried to clean up anything that might be a problem,
+            but
+            some things might still be here. <br><br>
+
+            Just to be clear: <br>
+            <div class="inward">
+                * This website is not connected to any of the companies whose stuff I used. <br>
+                * I'm not responsible for anything that happens because you looked at this site. <br><br>
+            </div>
+
+            I've grown up a lot since I made this, and I know better now. I'll always make sure to respect copyrights
+            and
+            trademarks in the future. <br><br>
+
+            If you see something that you think is still a problem, please let me know at kyle.web.in@gmail.com <br><br>
+
+        </div>
+
+        Thanks for understanding.
+
+    </div>
+
+    <div class="div1">
         <font style="color: black;">Terms and Conditions with Apology</font>
     </div>
 
     <div class="div2">
-        <font style="color: black; font-weight: 700;">**Regarding Past Content:**</font><br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Regarding Past
+            Content:**</font><br>
 
         This website was originally created during my childhood/adolescence. At that time, I incorporated certain logos,
         trademarks, and content that may be protected by copyright or other intellectual property laws. I acknowledge
         that this was done without proper authorization. <br><br><br>
 
-        <font style="color: black; font-weight: 700;">**Apology:**</font><br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Apology:**
+        </font><br>
 
         I sincerely apologize for any infringement that may have occurred. My intentions were purely non-commercial and
         recreational. I was a young enthusiast exploring web development, and I did not fully understand the legal
         implications of using copyrighted and trademarked materials. I did not intend to cause harm or misrepresent any
         brands or entities. <br><br><br>
 
-        <font style="color: black; font-weight: 700;">**Current Status:**</font><br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Current
+            Status:**</font><br>
 
         This website is now presented for archival purposes only. I have made efforts to remove or modify any
         potentially infringing content. However, due to the nature of the original creation, some elements may remain.
         <br><br><br>
 
-        <font style="color: black; font-weight: 700;">**Disclaimer:**</font><br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Disclaimer:**
+        </font><br>
 
         * This website is not affiliated with, endorsed by, or sponsored by any of the companies or organizations whose
         logos, trademarks, or content may have been used in the past. <br>
-        * The content on this website is provided "as is," without any warranties, express or implied. <br>
         * I am not responsible for any consequences arising from the use of this website or its content. <br><br><br>
 
-        <font style="color: black; font-weight: 700;">**Future Conduct:**</font><br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Future
+            Conduct:**</font><br>
 
         I understand the importance of respecting intellectual property rights and will ensure that all future projects
         comply with applicable laws and regulations. <br><br><br>
 
-        <font style="color: black; font-weight: 700;">**Contact:**</font> <br>
+        <font style="color: black; font-weight: 700; font-family: Lato, sans-serif; font-size: 24px;">**Contact:**
+        </font> <br>
 
         If you believe that any content on this website infringes your intellectual property, please contact me
-        immediately at [Your Email Address]. <br><br><br>
+        immediately at kyle.web.in@gmail.com <br><br><br>
 
         **By accessing and using this website, you agree to these terms and conditions.**
         <br><br><br>
     </div>
+
+    <div style="width: 100%; height: 200px;"></div>
+
+    <div style="margin-left: 5%;">
+        <a href="Terms and Conditions.pdf" download="KYLE Terms and Conditions.pdf"
+            style="padding: 20px 20px; color: royalblue; font-family: 'Ubuntu', sans-serif; font-size: 24px;">
+            Download Terms and conditions
+        </a>
+        <br><br><br>
+        <a href="Snapshot Terms and Conditions.pdf"
+            download="Snapshot(KYLE t&c).pdf"
+            style="padding: 20px 20px; color: royalblue; font-family: 'Ubuntu', sans-serif; font-size: 24px;">
+            Download a snapshot of this webpage
+        </a>
+    </div>
+
+    <div style="width: 100%; height: 200px;"></div>
 
 
     <footer>
@@ -347,11 +456,11 @@
             <div class="bottom_text">
 
                 <span class="copyright_text">Copyright © 2022 <a
-                        href="https://kyle-inc.github.io/kyle/terms">KYLE.inc.</a>All rights reserved</span>
+                        href="https://kyle-inc.github.io/kyle">KYLE.inc.</a>All rights reserved</span>
 
                 <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a>
+                    <a href="https://kyle-inc.github.io/kyle/terms">Privacy policy</a>
+                    <a href="https://kyle-inc.github.io/kyle/terms">Terms & condition</a>
                 </span>
 
             </div>
